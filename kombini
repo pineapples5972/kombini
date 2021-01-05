@@ -1,0 +1,23 @@
+#!/bin/sh
+
+# This Script outputs dmenu list of text and execute everything placed after ';' written in $file
+# Currently I use it to run appimages saved in fuse drives to save home storage and
+# access config files directly from dmenu
+# observe the appslist and spells file for reference and create/edit your files accordingly
+# if you put create more files make sure to add them in #choices variable
+# if invoke with argument it outputs desired file or invoked without arguments shows dmenu list.
+# I know comments are bloat so remove them if you wish.
+
+choices="appslist\nspells"
+file=${1:-$(echo -e "$choices" | dmenu -i)}
+
+var=$HOME/.local/share/extras/scripts/$file
+
+[ -z "$var" ]
+	less "$var" | grep -P "^$(less "$var" | grep ";" | sed 's/\t.*//g' | dmenu -i -p "👉" -l 170 | awk '{print $1}')\s" | sed 's/.*\t;//' | ${SHELL:-"/bin/bash"} &
+
+# my rough writing are from here
+# dmenu_path | dmenu "$@" | ${SHELL:-"/bin/sh"} &
+# [ -z "$1" ]
+
+# xargs -r st -e
