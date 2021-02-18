@@ -8,15 +8,21 @@
 # if invoke with argument it outputs desired file or invoked without arguments shows dmenu list.
 # I know comments are bloat so remove them if you wish.
 
-choices="appslist\nspells"
-file=${1:-$(echo -e "$choices" | dmenu -i)}
+choices=$(ls ~/.local/share/extras/scripts)
+#choices="appslist\nconfigs\nspells"
+file=${1:-$(echo -e "$choices" | dmenu -i -l 15)}
 
 var=$HOME/.local/share/extras/scripts/$file
 
 [ -z "$var" ]
-	less "$var" | grep -P "^$(less "$var" | grep ";" | sed 's/\t.*//g' | dmenu -i -p "👉" -l 170 | awk '{print $1}')\s" | sed 's/.*\t;//' | ${SHELL:-"/bin/bash"} &
+less "$var" | grep -P "^$(less "$var" | grep ";" | sed 's/\t.*//g' | dmenu -i -p "コンビニ 👉" -l 170 | awk '{print $1}')\s" | sed 's/.*\t;//' | ${SHELL:-"/bin/bash"} &
 
-# my rough writing are from here
+# To see output in rofi
+# rofi -show -dmenu -yoffset 01 -i -l 25
+# To see output in dmenu
+# dmenu -i -p "👉" -l 170 |
+
+# my rough writing goes from here
 # dmenu_path | dmenu "$@" | ${SHELL:-"/bin/sh"} &
 # [ -z "$1" ]
 
