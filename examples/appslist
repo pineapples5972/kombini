@@ -1,16 +1,18 @@
---------Browsers----------------------------------------------	;exec 'myprograms'
+--------Browsers----------------------------------------------	;notify-send "I wish web was not bloat" &
 🐱 qutebrowser	;exec qutebrowser
 🦁 brave	;exec brave ; notify-send "Browser Closed"
- firefox	;cd $APPIMAGES && ./Firefox* ; notify-send "Firefox Closed"
---------Office and Productivity----------------------------------------------	;exec 'myprograms'
+🐺 LibreWolf	;cd $APPIMAGES_PATH && ./LibreWolf* ; notify-send "LibreWolf Closed"
+🍿 FreeTube	;cd $APPIMAGES_PATH && ./freetube* ; notify-send "you exited out of doom"
+--------Productivity----------------------------------------------	;notify-send "That line does not meant for click" &
 🏢 Libre Office	;cd $APPIMAGES_PATH && ./LibreOffice-7.0.0-x86_64.AppImage
-📔 Only Office	;cd $APPIMAGES_PATH && ./DesktopEditors*
 🍄 Gimp		;cd $APPIMAGES_PATH && ./GIMP*
 🗻 Inkscape	;cd $APPIMAGES_PATH && ./Inkscape*
 📷 Krita	;cd $APPIMAGES_PATH && ./krita*
 🖌️ MyPaint	;cd $APPIMAGES_PATH && ./MyPaint*
 🐧 TuxPaint	;exec tuxpaint
---------Utilities and Tools----------------------------------------------	;exec 'myprograms'
+--------Utilities and Tools----------------------------------------------	;notify-send "Clank clank, Welcome to the field of villager" &
+🧊 IPFS desktop	;cd $APPIMAGES_PATH && ./ipfs*
+🗝️ KeyPassXc	;cd $APPIMAGES_PATH && ./KeePassXC*
 🧠 CPU-X	;cd $APPIMAGES_PATH && ./CPU-X*
 📺 Conky	;cd $APPIMAGES_PATH && ./Conky.AppImage
 🍭 Popsicle	;cd $APPIMAGES_PATH && ./Popsicle*
@@ -22,10 +24,9 @@
 🎹 lmms		;exec $APPIMAGES_PATH/lmms.AppImage
 🎥 MovieMonad	;exec $APPIMAGES_PATH/Movie-Monad.AppImage
 〽️ Stacer	;cd $APPIMAGES_PATH && ./Stacer.AppImage
---------Games----------------------------------------------	;exec 'myprograms'
+--------Games----------------------------------------------	;notify-send "Games can be played even in the absence of Steam/Internet if one knows The Art of downloading offline games" &
 🎏 Stunt Car Remake	;cd $APPIMAGES_PATH && ./Stunt_Car*
 🧝 Eternal Lands	;cd $APPIMAGES_PATH && ./Eternal*
- Minetest	;cd $APPIMAGES_PATH && ./Minetest*
 🌷 Super Tux	;cd $APPIMAGES_PATH && ./SuperTux.AppImage
 ======Add New Entry======================================	;$TERMINAL -e nvim "$HOME/.local/share/extras/scripts/appslist" ; notify-send "New Entry Loaded"
-======Open Directory=====================================	;$TERMINAL -e lf $APPIMAGES_PATH
+======Open Directory=====================================	;$TERMINAL -e vifm $APPIMAGES_PATH

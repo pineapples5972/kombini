@@ -1,7 +1,4 @@
-----------------------------Veil---------------------------[return]----	;exec 'myprograms'
-🐱 Uncloak Veil	;fireplaces floo
-🦁 Cloak Veil	;fireplaces flew
----------------------------Configs---------------------------------	;exec 'myprograms'
+---------------------------Change Configs---------------------------------	;notify-send "You suppose to click the Items below" &
 📘 Vimr	;$TERMINAL -e $EDITOR $HOME/.config/nvim/init.vim &
 📔 zprofile	;$TERMINAL -e $EDITOR $HOME/.zprofile
 📕 xprofile	;$TERMINAL -e $EDITOR $HOME/.xprofile
@@ -10,15 +7,15 @@
 🪄 aliasrc	;$TERMINAL -e $EDITOR $HOME/.config/aliasrc
 🦚 xresources	;$TERMINAL -e $EDITOR $HOME/.config/Xresources
 📜 xmenu	;$TERMINAL -e $EDITOR $HOME/.local/bin/xmenu
-------------------------------Programs---------------------------	;exec 'myprograms'
+------------------------------Programs---------------------------	;notify-send "dotfiles dotfile, ditty bitty dotfiles, save o u r configs" &
 📁 Vifm		;$TERMINAL -e $EDITOR $HOME/.config/vifm/vifmrc
 🍇 lf		;$TERMINAL -e $EDITOR $HOME/.config/lf/lfrc
 📺 straw-viewer	;$TERMINAL -e $EDITOR $HOME/.config/straw-viewer/straw-viewer.conf
 🌎 qutebrowser	;$TERMINAL -e $EDITOR $HOME/.config/qutebrowser/config.py
 📰 news sources	;$TERMINAL -e $EDITOR $HOME/.config/newsboat/urls
 📖 zathura	;$TERMINAL -e $EDITOR $HOME/.config/zathura/zathurarc
------------------------------WM---------------------------------	;exec 'myprograms'
+-----------------------------WM---------------------------------	;notify-send "The power of terminal lies in how well you can tile it" &
 🍙 i3		;$TERMINAL -e $EDITOR $HOME/.config/i3/config
 🎏 Spectrwm	;$TERMINAL -e $EDITOR $HOME/.config/spectrwm/spectrwm.conf
 🧝 dwm		;$TERMINAL -e vifm $HOME/.local/src/dwm
-============================Edit==============================	;$TERMINAL $EDITOR $HOME/.local/share/extras/scripts/spells
+============================Edit==============================	;$TERMINAL $EDITOR $HOME/.local/share/extras/scripts/configs && notify-send "configs has been edited" &
