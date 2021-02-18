@@ -24,4 +24,4 @@ Get a dmenu list of your appImages list or say bookmarks or anything and make li
 
 ![img](http://0x0.st/-sjU.png)
 
-![gif](http://0x0.st/-8XU.mkv)
+![gif](http://0x0.st/-8XR.gif)
