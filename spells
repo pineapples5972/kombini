@@ -1,0 +1,12 @@
+----------------------------Quick Switches-------------------------------	;notify-send "why you never read a spell book before?" &
+🔪 killer menu		;dmenukill
+🖼️ Next Backgroun	;setbg ~/chitra/walls/HP
+📂Whereismybg		;$TERMINAL -e vifm $(readlink $HOME/.local/share/bg)
+🐱 MountAllDrives	;fireplaces floo
+🦁 UnmountAllDrives	;fireplaces flew
+🗞️ Read Newspape	;getenews
+🌅 Fetch New Wallpapers	;getwalls
+🍱 Manage Packages	;paclaunch
+🔳 Keymaps US		;setxkbmap us ; notify-send "keymaps set as US"
+🔲 Keymaps DVORAK	;setxkbmap dvorak ; notify-send "keymaps set as DVORAK"
+------------------------Add NEW SPELLS-----------------------------------	;$TERMINAL -e nvim ~/.local/share/extras/scripts/spells && notify-send "Spellbook Updated" &
