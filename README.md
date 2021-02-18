@@ -23,3 +23,5 @@ Get a dmenu list of your appImages list or say bookmarks or anything and make li
  	librewolf	;exec librewolf
 
 ![img](http://0x0.st/-sjU.png)
+
+![gif](http://0x0.st/-8XU.mkv)
