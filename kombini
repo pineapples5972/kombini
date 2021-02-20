@@ -13,7 +13,7 @@ selection=${1:-$(echo -e "$scripts" | dmenu -i -l 15)}
 file=$HOME/.local/share/extras/scripts/$selection
 
 [ -z "$file" ]
-less "$file" | grep -P "^$(less "$file" | grep ";" | sed 's/\t.*//g' | dmenu -i -p "コンビニ 👉" -l 170 | awk '{print $1}')\s" | sed 's/.*\t;//' | ${SHELL:-"/bin/zsh"} &
+less "$file" | grep -P "^$(less "$file" | grep ";" | sed 's/\t.*//g' | dmenu -i -p "コンビニ 👉" -l 170 | awk '{print $1}')\s" | sed 's/.*\t;//' | ${SHELL:-"/bin/sh"} &
 
 # To see output in rofi use this line in place of  "dmenu -i -p"
 # rofi -show -dmenu -yoffset 01 -i -l 25

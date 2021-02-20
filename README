@@ -1,7 +1,9 @@
 # kombini コンビニ
-A Conveniet_Store way to launch your "AppImages" and "Spells" yes spells!
+ A Conveniet way to launch your "AppImages", "Programs" and "Spells" yes spells!
 
-Get a dmenu list of your appImages list or say bookmarks or anything and make life suckless.
+ Get a dmenu list of your appImages list or say bookmarks or anything and make life suckless.
+
+ ![gif](http://0x0.st/-8XR.gif)
 
  This Script outputs dmenu list of text and execute everything placed after ';' written in $file
 
@@ -21,7 +23,3 @@ Get a dmenu list of your appImages list or say bookmarks or anything and make li
  here how you create one.
  eg.- 	name of subject	<tab>;<semicolon>command
  	librewolf	;exec librewolf
-
-![img](http://0x0.st/-sjU.png)
-
-![gif](http://0x0.st/-8XR.gif)
